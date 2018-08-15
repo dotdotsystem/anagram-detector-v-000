@@ -10,7 +10,8 @@ class Anagram
     given_words.each do |w|
     if w.split("").sort == @word.split("").sort
     matches << w
+    end
   end
-end
   matches
-end
+  end
+end 
