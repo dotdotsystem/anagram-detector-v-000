@@ -7,6 +7,6 @@ def initialize(word)
  end
 
 def match(match_w)
-  match_w.select do {|w| match_w.split("").sort == word.split("").sort}
+  match_w.select do |w| match_w.split("").sort == word.split("").sort
   end
 end
