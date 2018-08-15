@@ -6,12 +6,12 @@ class Anagram
   end
 
   def match(given_words)
-    matches = []
+    match = []
     given_words.each do |w|
     if w.split("").sort == @word.split("").sort
-    matches << w
+    match << w
     end
   end
-  matches
+  match
   end
-end 
+end
