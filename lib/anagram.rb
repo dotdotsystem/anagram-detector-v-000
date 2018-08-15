@@ -3,6 +3,6 @@ class Anagram
 attr_accessor :word
 
 def match(word)
-  word.map do {|w| w.split("").sort == word.split("").sort}
+  word.select do {|w| w.split("").sort == word.split("").sort}
   end
 end
